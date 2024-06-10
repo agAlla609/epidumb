@@ -1,0 +1,25 @@
+{% extends "blog/base.html" %}
+{% block content %}
+
+  <h1 class="title"><u>Epiphanies</u></h1>
+  
+  <div class="container">
+      <img src="{{object.author.account.image.url}}" alt="Profile Pic" class="pp" width="100px" height="100px">
+      <div class="blog-post">      
+          <h2>{{object.title}}</h2>
+          <p>{{object.content}}</p>
+          <h4><a href="{% url 'user-posts' object.author.username %}">{{object.author.username}} </a><span>posted on </span>{{object.date_posted}}</h4><br>
+          {% if object.author == user %}
+      <div class="blog-post">      
+        <a href="{% url 'post-update' object.id %}" class="update-btn">Update Post</a>
+        <a href="{% url 'post-delete' object.id %}" class="mb-1 mt-1 update-btn">Delete Post</a>
+      </div>  
+      {% endif %}
+      </div>
+      
+      
+        
+      
+  </div>
+
+  {% endblock content %}

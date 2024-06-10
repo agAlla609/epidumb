@@ -1,0 +1,1 @@
+web: gunicorn jangoblog.wsgi --log-file

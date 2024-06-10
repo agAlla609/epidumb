@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            font-family: 'PT Sans', sans-serif;
+            box-sizing: border-box;
+            color: #222;
+        }
+        nav{
+            border-radius: 4px;
+            padding:1em;
+            background-color: #222;
+            height:3em;
+        }
+        a{
+            text-decoration: none;
+        }
+        nav a.mr-4{
+            font-size: 20px;
+            font-weight: bold;
+            color: #e3e4e4;
+        }
+        
+    </style>
+</head>
+<body>
+    <header class="site-header">
+        <nav class="navbar navbar-expand-md navbar-dark bg-steel fixed-top">
+            <div style="font-weight: lighter;" class="container">
+                <a href="/" class="navbar-brand mr-4">Django Blog</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse"></button>
+            </div>
+        </nav>
+    </header>
+    
+    <div class="update">
+        <form method="post" enctype="multipart/form-data">
+            <fieldset class="form-group">
+                <legend class="border-bottom mb-4"><h2> Profile Info</h2></legend>
+
+            </fieldset>
+            <div class="form-group">
+                <button type="submit" class="btn btn-primary"> Update</button>
+            </div>
+        </form> 
+    </div>
+    
+<a href="" class="update-btn"></a>
+</body>
+</html>
