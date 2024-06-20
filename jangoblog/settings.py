@@ -133,9 +133,9 @@ LOGIN_URL = 'login'
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_PORT = 587
-EMAIL_VIEWS_TLS = True
-EMAIL_HOST_USER = 'ianagala901@gmail.com'
-EMAIL_HOST_PASSWORD = 'vhoyxmqyuqifqxnt'
+EMAIL_USE_TLS = True
+EMAIL_HOST_USER = 'ian.b.agala@gmail.com'
+EMAIL_HOST_PASSWORD = 'meuajuxaisotbwut'
 
 #AWS_ACCESS_KEY_ID = 'AKIAZQ3DTCWUW6TJDOYP'
 #AWS_SECRET_ACCESS_KEY = '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'
